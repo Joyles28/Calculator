@@ -1,10 +1,10 @@
-first_operand = None
-second_operand = None
-operator = None
 result = None
 
-def calculate(first_operand, second_operand, operator, result):
+def calculate():
+    global first_operand, second_operand, operator, result
 
+    text = f"{first_operand} {operator} {second_operand} = "
+    
     try:
         if operator == "+":
             result = float(first_operand) + float(second_operand)
@@ -15,9 +15,11 @@ def calculate(first_operand, second_operand, operator, result):
         elif operator == "/":
             result = float(first_operand) / float(second_operand)
 
-        first_operand = f"{result:.2f}"
+        result = f"{result:.2f}"
     except ZeroDivisionError:
-        first_operand = None
-    second_operand = None
-    operator = None
-    result = None
+        result = "Undefined"
+        
+    text += result
+    
+    return text
+
