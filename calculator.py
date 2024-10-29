@@ -23,3 +23,8 @@ def calculate():
     
     return text
 
+first_operand = input("Enter first operand: ")
+operator = input("Choose operator [+, -, *, /]: ")
+second_operand = input("Enter second operand: ")
+result = calculate()
+print(calculate())
