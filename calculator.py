@@ -1,23 +1,18 @@
-first_operand = None
-second_operand = None
-operator = None
-result = None
-
-def calculate(first_operand, second_operand, operator, result):
+def calculate():
 
     try:
         if operator == "+":
-            result = float(first_operand) + float(second_operand)
+            pass
         elif operator == "-":
-            result = float(first_operand) - float(second_operand)
+            pass
         elif operator == "*":
-            result = float(first_operand) * float(second_operand)
+            pass
         elif operator == "/":
-            result = float(first_operand) / float(second_operand)
+            pass
 
-        first_operand = f"{result:.2f}"
+        # Result
+        #
     except ZeroDivisionError:
-        first_operand = None
-    second_operand = None
-    operator = None
-    result = None
+        # Result
+        #
+
